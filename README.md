@@ -1,7 +1,9 @@
 # gravit-eggs
+GravitLauncher egg
+
 Кастомные eggs для панели Pterodactyl.
 
-На данный момент здесь имеются 2 яйца для GravitLauncher с java 11 и java 17.
+На данный момент здесь имеются 1 яйцо для GravitLauncher с java 11 и java 17.
 
 ## Получение обновлений
 
