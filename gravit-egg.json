@@ -14,7 +14,7 @@
         "enchald\/gravit-core:java-11"
     ],
     "file_denylist": "",
-    "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -javaagent:LaunchServer.jar -jar LaunchServer.jar;",
+    "startup": "\/usr\/lib\/jvm\/bellsoft-java17-full-amd64\/bin\/java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -javaagent:LaunchServer.jar -jar LaunchServer.jar;",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"Starting netty server socket thread\",\r\n    \"userInteraction\": []\r\n}",
