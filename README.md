@@ -5,12 +5,10 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/gravit-core/gravit-eggs?label=GitHub%20Stars&style=for-the-badge&logo=Github&labelColor=1A222E&color=242B36)](https://github.com/gravit-core/gravit-eggs)
 [![GitHub forks](https://img.shields.io/github/forks/gravit-core/gravit-eggs?label=GitHub%20Forks&style=for-the-badge&logo=Github&labelColor=1A222E&color=242B36)](https://github.com/gravit-core/gravit-eggs)
 
-GravitLauncher egg
+GravitLauncher egg for Pterodactyl
 
-Кастомные eggs для панели Pterodactyl.
+Currently there is 1 egg for GravitLauncher with java 11 and java 17.
 
-На данный момент здесь имеются 1 яйцо для GravitLauncher с java 11 и java 17.
+## Get updates
 
-## Получение обновлений
-
-Все файлы скачиваются только с официального репозитория лаунчера, поэтому мои конфиги не придётся обновлять слишком часто.
+All files are downloaded only from the official launcher repository, so my configs won't have to be updated too often.
