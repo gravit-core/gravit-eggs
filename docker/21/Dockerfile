@@ -16,7 +16,7 @@ ENV         JMODS_URL=https://download2.gluonhq.com/openjfx/21.0.3/openjfx-21.0.
 RUN         curl -L ${JMODS_URL} -o openjfx.zip \
             && unzip openjfx.zip && rm openjfx.zip \
             && mkdir -p ${JMODS_DIR} \
-            && cp javafx-jmods-17.0.2/* /usr/share/openjfx/jmods
+            && cp javafx-jmods-21.0.3/* /usr/share/openjfx/jmods
 
 RUN         useradd -m -d /home/container -s /bin/bash container
 USER        container
