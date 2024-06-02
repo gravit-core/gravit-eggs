@@ -3,6 +3,8 @@ FROM        --platform=$TARGETOS/$TARGETARCH ghcr.io/pelican-eggs/yolks:java_17
 LABEL       author="XJIuPa" maintainer="egg@xjiupa.com"
 LABEL       org.opencontainers.image.source="https://github.com/gravit-core/gravit-eggs"
 
+USER        root
+
 RUN         apt-get update -y \
 			&& apt-get install -y curl lsof ca-certificates openssl osslsigncode git tar bash sqlite3 fontconfig tzdata iproute2 libfreetype6 \
             && curl -sL https://sentry.io/get-cli/ | sh \
