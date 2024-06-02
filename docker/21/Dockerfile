@@ -18,8 +18,8 @@ RUN         curl -L ${JMODS_URL} -o openjfx.zip \
             && mkdir -p ${JMODS_DIR} \
             && cp javafx-jmods-21.0.3/* /usr/share/openjfx/jmods
 
-RUN         useradd -m -d /home/container -s /bin/bash container
 USER        container
+RUN         useradd -m -d /home/container -s /bin/bash container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
