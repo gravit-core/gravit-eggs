@@ -4,21 +4,7 @@ LABEL       author="XJIuPa" maintainer="egg@xjiupa.com"
 LABEL       org.opencontainers.image.source="https://github.com/gravit-core/gravit-eggs"
 
 RUN         apt update -y \
-			&& apt install -y \
-					curl \
-					lsof \
-					ca-certificates \
-					openssl \
-                    osslsigncode \
-                    libusb-de  \
-					git \
-					tar \
-					bash \
-					sqlite3 \
-					fontconfig \
-					tzdata \
-					iproute2 \
-					libfreetype6 \
+			&& apt install -y curl lsof ca-certificates openssl osslsigncode libusb-de git tar bash sqlite3 fontconfig tzdata iproute2 libfreetype6 \
             && curl -sL https://sentry.io/get-cli/ | sh \
             && sentry-cli update
 
@@ -27,5 +13,6 @@ USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
-COPY        ./../entrypoint.sh /entrypoint.sh
+COPY        --chown=container:container ./../entrypoint.sh /entrypoint.sh
+RUN         chmod +x /entrypoint.sh
 CMD         [ "/bin/bash", "/entrypoint.sh" ]

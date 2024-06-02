@@ -15,7 +15,7 @@
         "GravitLauncher Java 17 DOCKER": "enchald\/gravit-core:java-17",
         "GravitLauncher Java 17 GHCR": "ghcr.io\/gravit-core\/gravit-eggs:java-17",
         "GravitLauncher Java 11 DOCKER": "enchald\/gravit-core:java-11",
-        "GravitLauncher Java 11 GHCR": "ghcr.io\/enchald\/gravit-core:java-11"
+        "GravitLauncher Java 11 GHCR": "ghcr.io\/gravit-core\/gravit-eggs:java-11"
     },
     "file_denylist": [],
     "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -javaagent:LaunchServer.jar -jar LaunchServer.jar;",
