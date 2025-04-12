@@ -7,7 +7,7 @@
 
 GravitLauncher egg for Pterodactyl
 
-Currently there is 1 egg for GravitLauncher with java 11, java 17 and java 21.
+Currently there is 1 egg for GravitLauncher with java 11, java 17, java 21 and java 22.
 
 ## Get updates
 
