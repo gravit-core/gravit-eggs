@@ -10,6 +10,9 @@ export INTERNAL_IP
 # Switch to the container's working directory
 cd /home/container || exit 1
 
+# Print Java home
+printf "\033[1m\033[33mcontainer@gravitlauncher~ \033[0mjava home\n"
+echo "$JAVA_HOME"
 # Print Java version
 printf "\033[1m\033[33mcontainer@gravitlauncher~ \033[0mjava -version\n"
 java -version
